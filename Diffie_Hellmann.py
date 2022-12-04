@@ -8,13 +8,17 @@ Created on Thu Dec  1 14:00:58 2022
 from modular_exponentiation import modular_exponentiation
 
 #Compute public keys
-#P, G public keys, a, b private keys
-
-def public_keys(P, G, s):
-    x = modular_exponentiation(G, s, P)
+#P: Prime, G: Generator, a: Private key
+def public_key(P, G, a):
+    x = modular_exponentiation(G, a, P)
     return x
 
-"""
+#Compute symmetric key (secret key)
+#P: Prime, a: Private key, y: Other persons public key
+def secret_key(P, a, y):
+    ka = y**a % P
+    return ka
+
 def public_keys(P, G, a, b):
     x = modular_exponentiation(G, a, P)
     y = modular_exponentiation(G, b, P)
@@ -25,11 +29,3 @@ def secret_keys(P, a, b, x, y):
     ka = y**a % P
     kb = x**b % P
     return ka, kb
-"""
-#public keys
-#P = 23
-#G = 9
-
-#private keys
-#alice_p = 4
-#bob_p = 3

@@ -1,9 +1,7 @@
 import random
 from math import pow
-
-#a=4
+a=random.randint(2,10)
 #To fing gcd of two numbers
-
 def gcd(a,b):
     if a<b:
         return gcd(b,a)
@@ -29,7 +27,7 @@ def power(a,b,c):
 #For asymetric encryption
 def encryption(msg,q,h,g):
     ct=[]
-    k=4
+    k=gen_key(q)
     s=power(h,k,q)
     p=power(g,k,q)
     for i in range(0,len(msg)):
@@ -46,13 +44,10 @@ def decryption(ct,p,key,q):
     for i in range(0,len(ct)):
         pt.append(chr(int(ct[i]/h)))
     return pt
-msg="Hei du der"
-#q=random.randint(pow(10,20),pow(10,50))
-q=23
-g=9
-#g=random.randint(2,q)
-#key=gen_key(q)
-key=4
+msg=("Hei  dobbel")
+q=random.randint(pow(10,20),pow(10,50))
+g=random.randint(2,q)
+key=gen_key(q)
 h=power(g,key,q)
 print("g used=",g)
 print("g^a used=",h)
