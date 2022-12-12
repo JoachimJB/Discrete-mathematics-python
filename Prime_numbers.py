@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Dec  1 13:24:51 2022
-
-@author: Joachim
-"""
 
 def prime_check(n):
     if n > 1:
@@ -12,6 +7,7 @@ def prime_check(n):
                 break
         else:
             return n
+
 
 def mersenne_prime(p):
     if prime_check(p):
