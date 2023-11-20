@@ -1,3 +1,10 @@
+"""
+File: Elliptical_curves.py
+Author: Joachim Jamtvedt Børresen
+Date: Decemember 4, 2022
+Description: Find points and other tools related to elliptical curves
+"""
+
 # -*- coding: utf-8 -*-
 
 #Adding points to a curve when not in field of Fp

@@ -1,10 +1,17 @@
+"""
+File: ElGamal_algorithm.py
+Author: Joachim Jamtvedt Børresen
+Date: Decemember 4, 2022
+Description: ElGamal encryption and decryption
+"""
+
 # -*- coding: utf-8 -*-
 
 from Diffie_Hellmann import *
 
 #ElGamal encryption that generates and returns public key (C_g and encrypted text)
 #p_key: Public key sent which includes P, G and public key
-#x: Senders private key, y: message tro be encrypted
+#x: Senders private key, y: message to be encrypted
 def HE_encryption(p_key, x, y):
     ct=[]                                   #Encrypted msg array
     key_ct=[]                               #Return variable

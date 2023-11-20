@@ -1,3 +1,10 @@
+"""
+File: Diffie_Hellmann.py
+Author: Joachim Jamtvedt Børresen
+Date: Decemember 4, 2022
+Description: The Diffie-Hellman key exchange is a cryptographic protocol that allows two parties to securely agree on a shared secret over an untrusted communication channel. The key exchange is based on modular exponentiation.
+"""
+
 # -*- coding: utf-8 -*-
 
 from modular_exponentiation import modular_exponentiation

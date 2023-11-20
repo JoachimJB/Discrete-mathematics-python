@@ -1,3 +1,12 @@
+"""
+File: modular_exponentiation.py
+Author: Joachim Jamtvedt Børresen
+Date: Decemember 4, 2022
+Description: Efficiently calculates the remainder when an integer is raised to a power and divided by another integer using modular exponentiation.
+"""
+
+
+
 # -*- coding: utf-8 -*-
 
 #Binary expansion Algorithm

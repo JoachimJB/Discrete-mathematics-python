@@ -1,3 +1,10 @@
+"""
+File: Prime_numbers.py
+Author: Joachim Jamtvedt Børresen
+Date: Decemember 4, 2022
+Description: Find prime numbers and identify
+"""
+
 # -*- coding: utf-8 -*-
 
 def prime_check(n):

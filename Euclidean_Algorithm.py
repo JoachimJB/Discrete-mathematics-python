@@ -1,3 +1,10 @@
+"""
+File: Euclidean_Algorithm.py
+Author: Joachim Jamtvedt Børresen
+Date: Decemember 4, 2022
+Description: Finding the greatest common divisor (GCD) of two integers.
+"""
+
 # -*- coding: utf-8 -*-
 
 from colorama import Fore, Style
